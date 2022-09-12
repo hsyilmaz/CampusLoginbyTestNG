@@ -1,6 +1,8 @@
 package LoginTest;
 
 import Utilities.SoftWebDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
@@ -22,7 +24,7 @@ public class TestNegative extends SoftWebDriver {
         if (pm.cooky.isDisplayed()) pm.cooky.click();
 
         pm.loginButton.click();
-
+        wait.until(ExpectedConditions.visibilityOf(pm.loginFailure));
         Assert.assertTrue(pm.loginFailure.getText().contains("Invalid"));
     }
 
