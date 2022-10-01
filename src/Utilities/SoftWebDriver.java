@@ -6,6 +6,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import java.time.Duration;
@@ -17,6 +18,7 @@ public class SoftWebDriver {
     public static org.openqa.selenium.WebDriver driver;
     public static WebDriverWait wait;
 
+    
     @Parameters("browser")
     @BeforeClass
     public void BaslangicIslemleri(String browser) {
