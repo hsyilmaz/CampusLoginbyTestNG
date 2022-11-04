@@ -10,16 +10,16 @@ public class PositiveTest extends GeneralWebDriver {
     @Test(dataProvider = "getData")
     void PositiveScenario(String userName, String passWord){
 
-        driver.get("https://campus.techno.study");
+        //driver.get("https://campus.techno.study");
 
         POM_Elements pm = new POM_Elements();
 
         pm.username.sendKeys(userName);
         pm.password.sendKeys(passWord);
 
-        if(pm.cooky.isDisplayed()) pm.cooky.click();
-
         pm.loginButton.click();
+
+        if(pm.cooky.isDisplayed()) pm.cooky.click();
 
         Assert.assertTrue(pm.loginSuccess.getText().contains("Merhaba"));
     }

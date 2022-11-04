@@ -11,7 +11,7 @@ public class NegativeTest extends GeneralWebDriver {
     @Test(dataProvider = "getData")
     void NegativeScenario(String userName, String passWord) {
 
-        driver.get("https://campus.techno.study");
+        //driver.get("https://campus.techno.study");
 
         POM_Elements pm = new POM_Elements();
 

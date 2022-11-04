@@ -49,7 +49,7 @@ public class SoftWebDriver {
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30)); // sadece ana sayfa yüklenirken en başta
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // bütün webElement için geçerli
 
-//        driver.get("https://campus.techno.study");
+        driver.get("https://campus.techno.study");
     }
 
 

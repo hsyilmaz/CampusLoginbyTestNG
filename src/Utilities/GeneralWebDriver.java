@@ -30,7 +30,9 @@ public class GeneralWebDriver {
         wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30)); // sadece ana sayfa yüklenirken en başta
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // bütün webElement için geçerli
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15)); // bütün webElement için geçerli
+
+        driver.get("https://campus.techno.study");
     }
 
     @AfterClass
