@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SoftSkillTestNG.iml" filepath="$PROJECT_DIR$/SoftSkillTestNG.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CampusLoginbyTESTNG.iml" filepath="$PROJECT_DIR$/CampusLoginbyTESTNG.iml" />
     </modules>
   </component>
 </project>
